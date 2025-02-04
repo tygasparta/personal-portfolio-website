@@ -11,25 +11,20 @@ export default function CallToAction() {
               animate-gradient bg-gradient-to-r from-[#FFA500] via-white to-[#FFA500]
               bg-[size:200%] text-transparent bg-clip-text"
             >
-              TAKE THE
-              <br />
-              NEXT STEP
+              TAKE THE NEXT STEP
             </h2>
             
             <p className="text-base md:text-lg text-white/70 leading-relaxed">
-              Ready to bring your vision to life? Let's connect and discuss how we can 
-              work together to achieve your goals. Your next big step starts here.
+              Ready to bring your vision to life? Let&apos;s connect and discuss how we can 
+              work together to achieve your goals.
             </p>
 
             <a 
               href="#contact" 
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#FFA500] text-black rounded-lg font-medium 
-              hover:bg-[#FFA500]/90 transition-all duration-300"
+              className="inline-block px-8 py-4 bg-[#FFA500] text-black rounded-lg font-medium 
+              hover:bg-[#FFA500]/90 transition-all duration-300 text-lg"
             >
               Get in Touch
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
             </a>
           </div>
 

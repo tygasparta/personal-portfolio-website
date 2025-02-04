@@ -21,7 +21,7 @@ export default function About() {
               ABOUT ME
             </h2>
             <p className="text-base md:text-lg text-white/70 leading-relaxed">
-              Hi, I'm Tyga Sparta, a Zimbabwean tech enthusiast passionate about software engineering, web development, cybersecurity and AI. I love turning complex challenges into elegant solutions that make an impact.
+              Your about text here
             </p>
           </div>
           
