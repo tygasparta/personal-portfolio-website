@@ -21,7 +21,7 @@ export default function About() {
               ABOUT ME
             </h2>
             <p className="text-base md:text-lg text-white/70 leading-relaxed">
-              Your about text here
+              I&apos;m a passionate developer dedicated to creating impactful digital solutions.
             </p>
           </div>
           

@@ -25,47 +25,17 @@ export default function Services() {
   ];
 
   return (
-    <section className="bg-[#111111] px-12 py-24">
+    <section id="services" className="bg-[#111111] py-20 md:py-32 px-4 md:px-0">
       <div className="max-w-[1400px] mx-auto">
-        {/* Header */}
-        <div className="flex items-center gap-2 mb-12">
-          <span className="text-[#FFA500] text-base tracking-wider font-medium">SERVICES</span>
-          <span className="text-white/30 text-sm font-mono">/&gt;</span>
-        </div>
-
-        {/* Content Grid */}
-        <div className="grid grid-cols-[1fr,1fr] gap-20 mb-20">
-          {/* Left - Title */}
-          <h2 className="text-[4.5rem] font-black tracking-tight leading-none animate-gradient bg-gradient-to-r from-[#FFA500] via-white to-purple-600 text-transparent bg-clip-text bg-[size:200%]">
-            SOLUTIONS THAT
-            <br />
-            DRIVE SUCCESS
-          </h2>
-
-          {/* Right - Description */}
-          <div className="self-end">
-            <p className="text-[1.25rem] leading-[1.8] text-white/70">
-              From software engineering to cybersecurity, I offer a range of solutions tailored 
-              to your needs. I'm here to help you make it happen.
-            </p>
-          </div>
-        </div>
-
-        {/* Services Grid */}
-        <div className="grid grid-cols-4 gap-8">
-          {services.map((service, index) => (
-            <div 
-              key={index} 
-              className="bg-[#1A1A1A] p-8 rounded-lg hover:bg-[#222222] transition-colors duration-300"
-            >
-              <div className="text-4xl mb-6 text-[#FFA500]">{service.icon}</div>
-              <h3 className="text-xl font-bold mb-4 text-white">{service.title}</h3>
-              <p className="text-white/60 leading-relaxed">
-                {service.description}
-              </p>
-            </div>
-          ))}
-        </div>
+        <h2 className="text-[2rem] md:text-[3.5rem] font-black tracking-tight leading-[1.1]
+          animate-gradient bg-gradient-to-r from-[#FFA500] via-white to-[#FFA500]
+          bg-[size:200%] text-transparent bg-clip-text"
+        >
+          SERVICES
+        </h2>
+        <p className="text-base md:text-lg text-white/70 leading-relaxed mt-4">
+          Specialized solutions for your digital needs.
+        </p>
       </div>
     </section>
   );
