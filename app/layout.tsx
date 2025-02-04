@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import AnimatedBackground from './components/AnimatedBackground'
 
 const geist = Geist({
   subsets: ["latin"],
@@ -14,12 +15,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body className={`${geist.variable} antialiased`}>{children}</body>
+      <body className="min-h-screen bg-[#111111] relative">
+        <AnimatedBackground />
+        <main className="relative z-10">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
