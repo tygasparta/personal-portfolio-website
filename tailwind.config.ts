@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -17,7 +17,7 @@ export default {
         montserrat: ["var(--font-montserrat)"],
       },
       backgroundSize: {
-        'size:200%': '200% auto',
+        '200%': '200% auto',
       },
       animation: {
         'bounce-slow': 'bounce 3s infinite',
@@ -34,16 +34,12 @@ export default {
           '0%, 100%': { backgroundPosition: '0% center' },
           '50%': { backgroundPosition: '100% center' },
         },
-        'spin-reverse': {
-          '0%': { transform: 'translate(-50%, -50%) rotate(360deg)' },
-          '100%': { transform: 'translate(-50%, -50%) rotate(0deg)' },
-        },
         float: {
-          '0%, 100%': { 
+          '0%, 100%': {
             transform: 'translateY(0)',
             opacity: 0.3,
           },
-          '50%': { 
+          '50%': {
             transform: 'translateY(-20px)',
             opacity: 0.5,
           },
@@ -66,4 +62,7 @@ export default {
     },
   },
   plugins: [],
-} satisfies Config;
+};
+
+export default config;
+
