@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #111111;
+  --foreground: #ffffff;
+  --accent: #FFA500;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #FFA500, #FF4500);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradientStroke {
+  0% {
+    stroke: #FFA500;
+  }
+  50% {
+    stroke: #ffffff;
+  }
+  100% {
+    stroke: #9333EA;
+  }
+}
+
+.animate-gradient {
+  animation: gradientStroke 6s linear infinite;
+}
