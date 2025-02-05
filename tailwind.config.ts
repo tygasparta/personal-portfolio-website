@@ -8,14 +8,6 @@ const config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        accent: "var(--accent)",
-      },
-      fontFamily: {
-        montserrat: ["var(--font-montserrat)"],
-      },
       backgroundSize: {
         '200%': '200% auto',
       },
